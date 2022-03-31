@@ -1,0 +1,35 @@
+categories:
+  - name: category1
+    questions:
+      - typeId: 1
+        isRequired: true
+        content: what about ...?
+        options:
+          - score: 10
+            content: a.
+          - score: 20
+            content: b,
+          - score: 30
+            content: c
+      - typeId: 1
+        isRequired: true
+        content: what if ...?
+        options:
+          - score: 10
+            content: d.
+          - score: 20
+            content: e,
+          - score: 30
+            content: f
+  - name: category2
+    questions:
+      - typeId: 2
+        isRequired: true
+        content: what about2 ...?
+        options:
+          - score: 10
+            content: a.
+          - score: 20
+            content: b,
+          - score: 30
+            content: c

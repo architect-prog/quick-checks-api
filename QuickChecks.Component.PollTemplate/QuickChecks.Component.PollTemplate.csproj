@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>10.0</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\QuickChecks.ContentProcessing\QuickChecks.ContentProcessing.csproj" />
+		<ProjectReference Include="..\QuickChecks.Persistence\QuickChecks.Persistence.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Constants\" />
+	</ItemGroup>
+
+</Project>
