@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ArchitectProg.Kernel.Extensions.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using QuickChecks.Kernel.Interfaces;
+using System.Data;
 using System.Threading.Tasks;
 
 namespace QuickChecks.Persistence.Infrastructure;
@@ -11,7 +12,8 @@ public sealed class UnitOfWork : IUnitOfWork
 
     public UnitOfWork(DbContext applicationDatabaseContext)
     {
-        transaction = applicationDatabaseContext.Database.BeginTransaction();
+        var currentTransaction = applicationDatabaseContext.Database.CurrentTransaction;
+        transaction = currentTransaction ?? applicationDatabaseContext.Database.BeginTransaction(IsolationLevel.ReadCommitted);
     }
 
     public async Task Commit()

@@ -7,9 +7,8 @@
 
 	<ItemGroup>
 		<PackageReference Include="EFCore.NamingConventions" Version="6.0.0" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1" />
-		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.3" />
-		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.4" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -17,8 +16,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Infrastructure\Interface\" />
-	  <Folder Include="Settings\" />
+		<Folder Include="Infrastructure\Interface\" />
+		<Folder Include="Settings\" />
 	</ItemGroup>
 
 </Project>

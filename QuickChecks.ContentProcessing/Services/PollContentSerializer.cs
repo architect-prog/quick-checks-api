@@ -1,4 +1,4 @@
-﻿using DotNet.FunctionalExtensions.Extensions;
+﻿using ArchitectProg.FunctionalExtensions.Extensions;
 using QuickChecks.ContentProcessing.Dto;
 using QuickChecks.ContentProcessing.Interfaces;
 using System;
@@ -28,7 +28,7 @@ public class PollContentSerializer : IPollContentSerializer
 
     public PollContentDto DeserializePollContent(string content)
     {
-        if (content.IsNullOrWhitespace())
+        if (content.IsNullOrWhiteSpace())
         {
             throw new ArgumentNullException(nameof(content));
         }

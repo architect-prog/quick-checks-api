@@ -1,8 +1,8 @@
-﻿using QuickChecks.Component.PollTemplate.Dto.Requests;
+﻿using ArchitectProg.Kernel.Extensions.Exceptions;
+using QuickChecks.Component.PollTemplate.Dto.Requests;
 using QuickChecks.Component.PollTemplate.Dto.Responses;
 using QuickChecks.Component.PollTemplate.Services.Interfaces;
 using QuickChecks.Component.PollTemplate.Validation.ValidationChecks.Interfaces;
-using QuickChecks.Kernel.Exceptions;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

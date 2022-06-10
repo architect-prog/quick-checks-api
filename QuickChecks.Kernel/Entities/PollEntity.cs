@@ -1,12 +1,13 @@
-﻿using QuickChecks.Kernel.Entities.Enum;
+﻿using ArchitectProg.Kernel.Extensions.Abstractions;
+using QuickChecks.Kernel.Entities.Enum;
 using System;
 using System.Collections.Generic;
 
 namespace QuickChecks.Kernel.Entities;
 
-public class PollEntity
+public class PollEntity : Entity<int>
 {
-    public int Id { get; set; }
+    public override int Id { get; set; }
     public string Title { get; set; }
     public PollStatus Status { get; set; }
     public bool IsDeleted { get; set; }

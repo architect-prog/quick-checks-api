@@ -1,6 +1,6 @@
-﻿using Autofac;
+﻿using ArchitectProg.Kernel.Extensions.Interfaces;
+using Autofac;
 using Microsoft.EntityFrameworkCore;
-using QuickChecks.Kernel.Interfaces;
 using QuickChecks.Persistence;
 using QuickChecks.Persistence.Infrastructure;
 using QuickChecks.Persistence.Infrastructure.Interface;

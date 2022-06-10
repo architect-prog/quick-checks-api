@@ -6,11 +6,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="ArchitectProg.FunctionalExtensions" Version="1.2.5" />
 		<PackageReference Include="YamlDotNet" Version="11.2.1" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\DotNet.FunctionalExtensions\DotNet.FunctionalExtensions.csproj" />
 	</ItemGroup>
 
 </Project>

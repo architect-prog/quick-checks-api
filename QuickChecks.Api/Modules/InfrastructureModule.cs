@@ -1,6 +1,6 @@
-﻿using Autofac;
-using DotNet.FunctionalExtensions.Interfaces;
-using DotNet.FunctionalExtensions.Services;
+﻿using ArchitectProg.FunctionalExtensions.Interfaces;
+using ArchitectProg.FunctionalExtensions.Services;
+using Autofac;
 using QuickChecks.ContentProcessing.Interfaces;
 using QuickChecks.ContentProcessing.Services;
 

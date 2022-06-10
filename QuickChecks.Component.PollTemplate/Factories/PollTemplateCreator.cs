@@ -1,4 +1,4 @@
-﻿using DotNet.FunctionalExtensions.Interfaces;
+﻿using ArchitectProg.FunctionalExtensions.Interfaces;
 using QuickChecks.Component.PollTemplate.Dto.Requests;
 using QuickChecks.Component.PollTemplate.Factories.Interfaces;
 using QuickChecks.Component.PollTemplate.Mappers.Interfaces;

@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using ArchitectProg.Kernel.Extensions.Abstractions;
+using System.Collections.Generic;
 
 namespace QuickChecks.Kernel.Entities;
 
-public class CategoryEntity
+public class CategoryEntity : Entity<int>
 {
-    public int Id { get; set; }
+    public override int Id { get; set; }
     public string Name { get; set; }
 
     public int PollId { get; set; }

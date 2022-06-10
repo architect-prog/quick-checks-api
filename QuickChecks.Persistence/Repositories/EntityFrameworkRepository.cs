@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using QuickChecks.Kernel.Interfaces;
-using QuickChecks.Persistence.Extensions;
+﻿using ArchitectProg.Kernel.Extensions.Extensions;
+using ArchitectProg.Kernel.Extensions.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;

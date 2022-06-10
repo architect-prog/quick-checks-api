@@ -9,4 +9,8 @@
 	  <Folder Include="Entities\Enum\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="ArchitectProg.Kernel.Extensions" Version="1.0.3" />
+	</ItemGroup>
+
 </Project>

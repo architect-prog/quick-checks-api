@@ -1,6 +1,6 @@
-﻿using QuickChecks.Component.PollTemplate.Dto.Requests;
+﻿using ArchitectProg.Kernel.Extensions.Interfaces;
+using QuickChecks.Component.PollTemplate.Dto.Requests;
 using QuickChecks.ContentProcessing.Dto;
-using QuickChecks.Kernel.Interfaces;
 
 namespace QuickChecks.Component.PollTemplate.Mappers.Interfaces;
 

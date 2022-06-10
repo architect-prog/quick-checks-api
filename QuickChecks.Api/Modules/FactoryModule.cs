@@ -10,5 +10,7 @@ public class FactoryModule : Module
     {
         builder.RegisterType<PollTemplateCloneFactory>().As<IPollTemplateCloneFactory>().InstancePerLifetimeScope();
         builder.RegisterType<PollTemplateCreator>().As<IPollTemplateCreator>().InstancePerLifetimeScope();
+
+
     }
 }

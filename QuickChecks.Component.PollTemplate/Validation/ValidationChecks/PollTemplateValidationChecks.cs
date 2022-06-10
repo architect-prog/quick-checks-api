@@ -1,6 +1,6 @@
-﻿using QuickChecks.Component.PollTemplate.Validation.ValidationChecks.Interfaces;
+﻿using ArchitectProg.Kernel.Extensions.Interfaces;
+using QuickChecks.Component.PollTemplate.Validation.ValidationChecks.Interfaces;
 using QuickChecks.Kernel.Entities;
-using QuickChecks.Kernel.Interfaces;
 using QuickChecks.Kernel.Specifications.PollTemplate;
 using System.Threading.Tasks;
 

@@ -1,5 +1,7 @@
+using ArchitectProg.Kernel.Extensions.Exceptions;
+using ArchitectProg.WebApi.Extensions.Attributes;
+using ArchitectProg.WebApi.Extensions.Filters;
 using Autofac;
-using DotNet.WebApi.Extensions.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -7,7 +9,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using QuickChecks.Api.Extensions;
 using QuickChecks.Api.Modules;
-using QuickChecks.Kernel.Exceptions;
 using QuickChecks.Persistence.Settings;
 
 namespace QuickChecks.Api;
@@ -26,8 +27,8 @@ public class Startup
         services.AddControllers(options =>
         {
             options.Filters.Add(new ProducesUnauthorizedAttribute());
-            options.Filters.Add(new BadRequestOnExceptionAttribute(typeof(ValidationException)));
-            options.Filters.Add(new NotFoundOnExceptionAttribute(typeof(ResourceNotFoundException)));
+            options.Filters.Add(new BadRequestOnExceptionFilter(typeof(ValidationException)));
+            options.Filters.Add(new NotFoundOnExceptionFilter(typeof(ResourceNotFoundException)));
         }).AddControllersAsServices();
 
         services.AddOptions();

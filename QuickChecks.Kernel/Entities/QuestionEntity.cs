@@ -1,11 +1,12 @@
-﻿using QuickChecks.Kernel.Entities.Enum;
+﻿using ArchitectProg.Kernel.Extensions.Abstractions;
+using QuickChecks.Kernel.Entities.Enum;
 using System.Collections.Generic;
 
 namespace QuickChecks.Kernel.Entities;
 
-public class QuestionEntity
+public class QuestionEntity : Entity<int>
 {
-    public int Id { get; set; }
+    public override int Id { get; set; }
     public int OrderIndex { get; set; }
     public bool IsRequired { get; set; }
     public string Content { get; set; }

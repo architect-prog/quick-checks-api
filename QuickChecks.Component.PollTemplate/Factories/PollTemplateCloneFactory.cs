@@ -1,4 +1,4 @@
-﻿using DotNet.FunctionalExtensions.Interfaces;
+﻿using ArchitectProg.FunctionalExtensions.Interfaces;
 using QuickChecks.Component.PollTemplate.Factories.Interfaces;
 using QuickChecks.Kernel.Entities;
 using System;

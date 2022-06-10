@@ -1,8 +1,10 @@
-﻿namespace QuickChecks.Kernel.Entities;
+﻿using ArchitectProg.Kernel.Extensions.Abstractions;
 
-public class QuestionOptionEntity
+namespace QuickChecks.Kernel.Entities;
+
+public class QuestionOptionEntity : Entity<int>
 {
-    public int Id { get; set; }
+    public override int Id { get; set; }
     public int OrderIndex { get; set; }
     public string Content { get; set; }
     public int Score { get; set; }

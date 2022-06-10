@@ -1,4 +1,5 @@
-﻿using DotNet.FunctionalExtensions.Interfaces;
+﻿using ArchitectProg.FunctionalExtensions.Interfaces;
+using ArchitectProg.Kernel.Extensions.Interfaces;
 using QuickChecks.Component.PollTemplate.Dto.Requests;
 using QuickChecks.Component.PollTemplate.Dto.Responses;
 using QuickChecks.Component.PollTemplate.Factories.Interfaces;
@@ -6,8 +7,8 @@ using QuickChecks.Component.PollTemplate.Mappers.Interfaces;
 using QuickChecks.Component.PollTemplate.Services.Interfaces;
 using QuickChecks.ContentProcessing.Interfaces;
 using QuickChecks.Kernel.Entities;
-using QuickChecks.Kernel.Interfaces;
 using QuickChecks.Kernel.Specifications.PollTemplate;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -54,6 +55,17 @@ public class PollTemplateService : IPollTemplateService
         using (var transaction = unitOfWorkFactory.BeginTransaction())
         {
             await repository.Add(poll);
+
+            using (var transaction2 = unitOfWorkFactory.BeginTransaction())
+            {
+                request.Title = "pidor";
+                var poll2 = pollTemplateCreator.CreatePollTemplate(request);
+                await repository.Add(poll2);
+                await transaction2.Commit();
+            }
+
+            throw new Exception();
+
             await transaction.Commit();
         }
 

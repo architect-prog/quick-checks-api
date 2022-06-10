@@ -1,5 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using QuickChecks.Kernel.Interfaces;
+﻿using ArchitectProg.Kernel.Extensions.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 
 namespace QuickChecks.Persistence.Infrastructure;
@@ -15,7 +16,7 @@ public class UnitOfWorkFactory : IUnitOfWorkFactory
 
     public IUnitOfWork BeginTransaction()
     {
-        var dbContext = serviceProvider.GetService<ApplicationDatabaseContext>();
+        var dbContext = serviceProvider.GetService<DbContext>();
         var result = new UnitOfWork(dbContext);
         return result;
     }

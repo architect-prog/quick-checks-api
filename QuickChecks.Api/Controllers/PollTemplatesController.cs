@@ -1,6 +1,6 @@
-﻿using DotNet.WebApi.Extensions.Extensions;
-using DotNet.WebApi.Extensions.Filters;
-using DotNet.WebApi.Extensions.Responses;
+﻿using ArchitectProg.WebApi.Extensions.Attributes;
+using ArchitectProg.WebApi.Extensions.Extensions;
+using ArchitectProg.WebApi.Extensions.Responses;
 using Microsoft.AspNetCore.Mvc;
 using QuickChecks.Component.PollTemplate.Dto.Requests;
 using QuickChecks.Component.PollTemplate.Dto.Responses;

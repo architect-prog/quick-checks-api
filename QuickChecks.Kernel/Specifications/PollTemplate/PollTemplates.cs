@@ -1,4 +1,5 @@
-﻿using QuickChecks.Kernel.Entities;
+﻿using ArchitectProg.Kernel.Extensions.Abstractions;
+using QuickChecks.Kernel.Entities;
 using System.Linq;
 
 namespace QuickChecks.Kernel.Specifications.PollTemplate;
